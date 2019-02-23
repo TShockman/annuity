@@ -15,7 +15,7 @@ $ java -jar annuityCli-0.0.1-SNAPSHOT-jar-with-dependencies.jar <loanAmount> <pe
 ```
 
 
-#### Start Server:
+### Start Server:
 After building,
 ```
 $ cd annuityServer
