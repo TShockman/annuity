@@ -5,6 +5,7 @@ import org.json.JSONObject;
 import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 
+// Immutable data model representing a single annuity payment
 public class AnnuityPayment {
 
     private double borrowerPaymentAmount;

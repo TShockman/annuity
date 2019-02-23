@@ -3,6 +3,7 @@ package com.tshockman.annuityLib.models;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+// Immutable data model representing a single request for annuity payment calculation
 public class AnnuityCalculationRequest {
     private double loanAmount;
     private double nominalRate;
@@ -32,6 +33,7 @@ public class AnnuityCalculationRequest {
         return startDate;
     }
 
+    // Override equals and hashCode for use in caching results
     @Override
     public boolean equals(Object thatObj) {
         if (thatObj.getClass() != this.getClass()) {
@@ -48,6 +50,4 @@ public class AnnuityCalculationRequest {
     public int hashCode() {
         return Objects.hash(this.loanAmount, this.nominalRate, this.duration, this.startDate);
     }
-
-
 }
